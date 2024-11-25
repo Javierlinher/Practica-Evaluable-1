@@ -123,11 +123,11 @@ public class PRACTICA1 {
                     System.out.println();
                     System.out.println("Resultado");
                     if (apuestaj1 % 2 == 0) {
-                        System.out.println("Jugador 1 PIERDES " + apuestaj2 + " canicas ya que el jugador 1 tenia " + apuestaj1 + " canicas");
+                        System.out.println("Jugador 1 PIERDES " + apuestaj2 + " canicas ya que el jugador 2 tenia " + apuestaj2 + " canicas");
                         canicasj1 = canicasj1 - apuestaj2;  // Se restan las canicas al jugador 1.
                         canicasj2 = canicasj2 + apuestaj2;  // Se suman las canicas al jugador 2.
                     } else {
-                        System.out.println("Jugador 1 GANAS " + apuestaj1 + " canicas ya que el jugador 1 tenia " + apuestaj1 + " canicas");
+                        System.out.println("Jugador 1 GANAS " + apuestaj1 + " canicas ya que el jugador 2 tenia " + apuestaj2 + " canicas");
                         canicasj2 = canicasj2 - apuestaj1;  // Se restan las canicas al jugador 2.
                         canicasj1 = canicasj1 + apuestaj1;  // Se suman las canicas al jugador 1.
                     }
@@ -136,11 +136,11 @@ public class PRACTICA1 {
                     System.out.println();
                     System.out.println("Resultado");
                     if (apuestaj1 % 2 == 1) {
-                        System.out.println("Jugador 1 PIERDES " + apuestaj2 + " canicas ya que el jugador 1 tenia " + apuestaj1 + " canicas");
+                        System.out.println("Jugador 1 PIERDES " + apuestaj2 + " canicas ya que el jugador 2 tenia " + apuestaj2 + " canicas");
                         canicasj1 = canicasj1 - apuestaj2;  // Se restan las canicas al jugador 1.
                         canicasj2 = canicasj2 + apuestaj2;  // Se suman las canicas al jugador 2.
                     } else {
-                        System.out.println("Jugador 1 GANAS " + apuestaj1 + " canicas ya que el jugador 1 tenia " + apuestaj1 + " canicas");
+                        System.out.println("Jugador 1 GANAS " + apuestaj1 + " canicas ya que el jugador 2 tenia " + apuestaj2 + " canicas");
                         canicasj2 = canicasj2 - apuestaj1;  // Se restan las canicas al jugador 2.
                         canicasj1 = canicasj1 + apuestaj1;  // Se suman las canicas al jugador 1.
                     }
@@ -155,7 +155,7 @@ public class PRACTICA1 {
         } while (canicasj1 != 0 && canicasj2 != 0);  // Fin del bucle cuando alguien se queda sin canicas.
 
         if (canicasj1 == 0) {  // Si gana el jugador 2.
-            System.out.println("¡Felicidades Jugador 2! Has ganado el juego.");
+            System.out.println("¡Te quedaste sin canicas Jugador 1! Has perdido el juego.");
         } else {  // Si gana el jugador 1.
             System.out.println("¡Felicidades Jugador 1! Has ganado el juego.");
         }
